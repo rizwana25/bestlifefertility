@@ -275,6 +275,51 @@
           justify-content: center;
         }
       }
+      /* ================= MOBILE HERO OVERLAP (FINAL) ================= */
+@media (max-width: 600px) {
+
+/* HEADER */
+.header {
+  padding: 3rem 0 5rem; /* enough space for overlap */
+  text-align: center;
+}
+
+.header-inner {
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* LOGO – intentional half overlap */
+.logo-overlap {
+  width: 140px;
+  height: 140px;
+  transform: translateY(50%); /* 👈 half outside header */
+  margin: 0;
+}
+
+.logo-overlap img {
+  max-width: 85%;
+}
+
+/* TITLE */
+.brand-text h1 {
+  font-size: 2.2rem;
+  line-height: 1.25;
+}
+
+.brand-text p {
+  font-size: 0.95rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* CONTACT SECTION pulls up to meet logo */
+.hero {
+  padding-top: 5.5rem; /* aligns with overlap */
+}
+}
+
     </style>
   </head>
 

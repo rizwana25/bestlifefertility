@@ -314,6 +314,15 @@
   max-width: 90%;
   margin: 0 auto;
 }
+/* Pull brand text slightly upward on mobile */
+.brand-text {
+  padding-top: -0.8rem;
+}
+@media (max-width: 600px) {
+  .doctors .section-subtitle {
+    margin-bottom: 2rem;
+  }
+}
 
 /* CONTACT SECTION pulls up to meet logo */
 .hero {
@@ -408,12 +417,17 @@
       <div class="wrap">
         <div class="section-eyebrow">OUR TEAM</div>
         <h2>Meet Our Doctors</h2>
+        <p class="section-subtitle">
+          Experienced fertility specialists dedicated to compassionate,
+          evidence-based reproductive care.
+        </p>
+        
 
         <div class="doctor-grid">
           <div class="doctor-card">
             <img src="maz.png" alt="Dr. Mazen" />
             <div>
-              <h3>Dr. Mazen</h3>
+              <h3>Dr. Mazen Dayeh</h3>
               <div class="doctor-role">General Manager</div>
               <p>Reproductive Medicine and Infertility Consultant</p>
               <a class="doctor-link" href="mazenpdf.pdf" target="_blank"
